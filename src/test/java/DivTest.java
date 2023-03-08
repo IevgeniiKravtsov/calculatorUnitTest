@@ -18,7 +18,7 @@ public class DivTest {
     @CsvFileSource(resources = "multLong.csv")
     @DisplayName("Division with Long")
     public void divLongTest(long result, long a, long b) {
-        assertEquals(b, calculator.div(result,a));
+        assertEquals(b, calculator.div(result, a));
     }
 
     @ParameterizedTest
@@ -26,6 +26,6 @@ public class DivTest {
     @DisplayName("Division with Double")
     // There is no validation on the attempt to divide by zero
     public void divDoubleTest(double result, double a, double b) {
-        assertEquals(b, calculator.div(result,a), 0.00001);
+        assertEquals(b, calculator.div(result, a), 0.00001);
     }
 }

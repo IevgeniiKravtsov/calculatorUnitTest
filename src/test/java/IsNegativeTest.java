@@ -10,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class IsNegativeTest {
 
     @ParameterizedTest
-    @CsvSource({"1, false", "0, false","-1, true", "10, false", "-2, true", "-1234, true"})
+    @CsvSource({"1, false", "0, false", "-1, true", "10, false", "-2, true", "-1234, true"})
     @DisplayName("Is negative")
-    public void isNegativeTest(long a, boolean result, Calculator calculator)    {
+    public void isNegativeTest(long a, boolean result, Calculator calculator) {
         assertEquals(result, calculator.isNegative(a));
     }
 }

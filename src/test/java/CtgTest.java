@@ -13,7 +13,7 @@ public class CtgTest {
     @CsvFileSource(resources = "trigonometric.csv")
     @DisplayName("Cotangent")
     // some mistake in formula
-    public void ctgTest(double degree, double sinus, double cosine, double tangent, double cotangent, Calculator calculator){
-        assertEquals(cotangent, calculator.ctg(Math.toRadians(degree)),0.0001);
+    public void ctgTest(double degree, double sinus, double cosine, double tangent, double cotangent, Calculator calculator) {
+        assertEquals(cotangent, calculator.ctg(Math.toRadians(degree)), 0.0001);
     }
 }

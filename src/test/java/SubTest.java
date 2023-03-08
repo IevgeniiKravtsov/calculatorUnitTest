@@ -13,14 +13,14 @@ public class SubTest {
     @Test
     @DisplayName("Subtraction with Long")
     public void subLongTest(Calculator calculator) {
-        assertEquals(-1, calculator.sub(25,26));
+        assertEquals(-1, calculator.sub(25, 26));
     }
 
     @ParameterizedTest
-    @CsvSource ({"10.0,12,2.0", "-2.15,2.15,4.3","0.0,0,00.000"})
+    @CsvSource({"10.0,12,2.0", "-2.15,2.15,4.3", "0.0,0,00.000"})
     @DisplayName("Subtraction with Double")
-    public void subDoubleTest(double result, double a, double b, Calculator calculator){
-        assertEquals(result, calculator.sub(a,b));
+    public void subDoubleTest(double result, double a, double b, Calculator calculator) {
+        assertEquals(result, calculator.sub(a, b));
     }
 
 }

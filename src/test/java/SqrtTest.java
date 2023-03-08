@@ -10,10 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SqrtTest {
 
     @ParameterizedTest
-    @CsvSource({"16.0,4", "1,1","0.0,00.000", "-9,3", "36, -6", "0.1, 0.3162"})
+    @CsvSource({"16.0,4", "1,1", "0.0,00.000", "-9,3", "36, -6", "0.1, 0.3162"})
     // possible to deal sqrt with negative numbers
     @DisplayName("Square root")
-    public void sqrtTest(double a, double result, Calculator calculator){
-        assertEquals(result, calculator.sqrt(a),0.0001);
+    public void sqrtTest(double a, double result, Calculator calculator) {
+        assertEquals(result, calculator.sqrt(a), 0.0001);
     }
 }

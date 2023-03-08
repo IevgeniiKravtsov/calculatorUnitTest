@@ -15,7 +15,7 @@ public class SinTest {
     @ParameterizedTest
     @CsvFileSource(resources = "trigonometric.csv")
     @DisplayName("Sinus")
-    public void sinTest(double degree, double sinus, double cosine, double tangent, double cotangent, Calculator calculator){
-        assertEquals(sinus, calculator.sin(Math.toRadians(degree)),0.0001);
+    public void sinTest(double degree, double sinus, double cosine, double tangent, double cotangent, Calculator calculator) {
+        assertEquals(sinus, calculator.sin(Math.toRadians(degree)), 0.0001);
     }
 }

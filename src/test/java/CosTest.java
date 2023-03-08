@@ -16,7 +16,7 @@ public class CosTest {
     @CsvFileSource(resources = "trigonometric.csv")
     @DisplayName("Cosine")
     // probably not cosine
-    public void cosTest(double degree, double sinus, double cosine, double tangent, double cotangent, Calculator calculator){
-        assertEquals(cosine, calculator.cos(Math.toRadians(degree)),0.0001);
+    public void cosTest(double degree, double sinus, double cosine, double tangent, double cotangent, Calculator calculator) {
+        assertEquals(cosine, calculator.cos(Math.toRadians(degree)), 0.0001);
     }
 }

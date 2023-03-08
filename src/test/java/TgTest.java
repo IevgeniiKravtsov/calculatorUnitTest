@@ -13,7 +13,7 @@ public class TgTest {
     @CsvFileSource(resources = "trigonometric.csv")
     @DisplayName("Tangent")
     // some mistake in formula
-    public void tgTest(double degree, double sinus, double cosine, double tangent, double cotangent, Calculator calculator){
-        assertEquals(tangent, calculator.tg(Math.toRadians(degree)),0.0001);
+    public void tgTest(double degree, double sinus, double cosine, double tangent, double cotangent, Calculator calculator) {
+        assertEquals(tangent, calculator.tg(Math.toRadians(degree)), 0.0001);
     }
 }
